@@ -21,8 +21,12 @@ function factorialReduce(n) {
                 .reduce((acc, num) => acc * num, 1);
 }
 
+// One-liner with reduce and Array.from
+const factorialOneLiner = n => Array.from({length: n}, (_, i) => i + 1).reduce((a, b) => a * b, 1);
+
 console.log(factorialWhile(5));
 console.log(factorialRecursive(5));
 console.log(factorialReduce(5));
+console.log(factorialOneLiner(5));
 
 
