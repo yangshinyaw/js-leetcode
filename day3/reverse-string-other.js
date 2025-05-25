@@ -7,7 +7,7 @@ function reverseStringLoop(str) {
     return result;
 }
 
-console.log(reverseStringLoop("hello"));
+
 
 // Other Solution: Using recursion
 function reverseStringRecursive(str) {
@@ -16,9 +16,13 @@ function reverseStringRecursive(str) {
     }
     return str[str.length - 1] + reverseStringRecursive(str.slice(0, -1));
 }
-console.log(reverseStringRecursive("hello"));
+
 
 // Other Solution: Using map with index manipulation
 function reverseStringMap(str) {
     return str.split('').map((char, index, arr) => arr[arr.length - 1 - index]).join('');
 }
+
+console.log(reverseStringLoop("hello"));
+console.log(reverseStringRecursive("hello"));
+console.log(reverseStringMap("hello"));
