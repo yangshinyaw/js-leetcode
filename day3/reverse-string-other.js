@@ -9,7 +9,7 @@ function reverseStringLoop(str) {
 
 console.log(reverseStringLoop("hello"));
 
-// Solution 3: Using recursion
+// Other Solution: Using recursion
 function reverseStringRecursive(str) {
     if (str.length <= 1) {
         return str;
@@ -18,3 +18,7 @@ function reverseStringRecursive(str) {
 }
 console.log(reverseStringRecursive("hello"));
 
+// Other Solution: Using map with index manipulation
+function reverseStringMap(str) {
+    return str.split('').map((char, index, arr) => arr[arr.length - 1 - index]).join('');
+}
