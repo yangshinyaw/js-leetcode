@@ -25,3 +25,4 @@ function countVowelsFilter(str) {
 
 console.log(countVowelsLoop("hello")); // Output: 2
 console.log(countVowelsRegex("hello")); // Output: 2
+console.log(countVowelsFilter("hello")); // Output: 2
