@@ -1,0 +1,16 @@
+// Solution 1: Traditional function declaration
+function celsiusToFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+}
+
+// Solution 2: Arrow function (ES6+)
+const celsiusToFahrenheitArrow = celsius => (celsius * 9/5) + 32;
+
+// Usage examples:
+console.log(celsiusToFahrenheit(0));    // 32°F (freezing point)
+console.log(celsiusToFahrenheit(100));  // 212°F (boiling point)
+console.log(celsiusToFahrenheit(25));   // 77°F (room temperature)
+
+console.log(celsiusToFahrenheitArrow(0));    // 32°F
+console.log(celsiusToFahrenheitArrow(100));  // 212°F
+console.log(celsiusToFahrenheitArrow(25));   // 77°F
