@@ -8,3 +8,8 @@ function countCharLoop(str, char) {
     }
     return count;
 }
+
+// Solution 2: Using split() method (elegant one-liner)
+function countCharSplit(str, char) {
+    return str.split(char).length - 1;
+}
